@@ -1,1 +1,1 @@
-Result https://portfolio-denis.com/GitHub/notice-code-exercises
+Result https://portfolio-denis.com/projects/notice
