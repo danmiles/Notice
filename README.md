@@ -1,1 +1,1 @@
-Result https://portfolio-denis.com/projects/notice
+Result https://portfolio-denis.com/GitHub/Notice
