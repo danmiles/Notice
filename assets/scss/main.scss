@@ -6,7 +6,7 @@
 // ============= Global setup start =============
 
 body {
-    font-size: 16px;
+    font-size: 18px;
     background-color: $body-color;
     line-height: 1.5;
     min-width: 320px;
@@ -102,9 +102,18 @@ section {
     }   
 }
 
+.section__title {
+    font-size: 35px;
+    font-weight: bold;
+}
+
 .sub-title {
     font-size: 30px;
     margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 
@@ -426,7 +435,7 @@ section {
 
 .content {
     display: flex;
-    height: 100vh;    
+    // min-height: 50vh;    
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -481,6 +490,40 @@ section {
     }
 }
 
+// ============= Section faq__hobby Start =============
+.photo-gallery {
+
+    .photo-gallery__item {
+        overflow: hidden;
+        transition: all 0.3s ease;        
+        &:hover {
+            transform: scale(1.1) rotate(3deg);            
+        }
+        img {
+            height: auto;
+            width: 100%; 
+        }  
+    }
+}
+
+/* Style for Glightbox Start https://github.com/biati-digital/glightbox/blob/master/README.md */
+.goverlay {
+    background: #1c1b1b;
+}
+
+.gbtn {
+    padding: 0 !important;
+    background-color: $link-color !important;
+    transition: all 0.3s ease !important;
+    &:hover {
+        background-color: $link-color__hover !important;
+    }
+}
+.gclose {
+    opacity: 1 !important;    
+}
 
 
-// ============= Section Content end =============
+
+
+// ============= Section faq__hobby end =============

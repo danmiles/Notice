@@ -109,6 +109,10 @@ on(
     true
 );
 
+const photoGalleryLightbox = GLightbox({
+    selector: ".glightbox",
+});
+
 /**
  * Scrool with ofset on links with a class name .scrollto
  */
@@ -159,7 +163,7 @@ on(
 //     aos_init();
 // });
 
-// ================= Javascript for NOTICE =================    
+// ================= !!!!!!!!!!!!! Javascript for NOTICE !!!!!!!!!!!!! =================    
 
 // ========= Change Title Start =========
 function changeTitle() {
@@ -217,3 +221,4 @@ buttonClear.addEventListener('click', function () {
     }
     itemsArray = [];
 });
+

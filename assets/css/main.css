@@ -1,5 +1,5 @@
 body {
-    font-size: 16px;
+    font-size: 18px;
     background-color: #0f1a42;
     line-height: 1.5;
     min-width: 320px;
@@ -105,9 +105,18 @@ section {
     }
 }
 
+.section__title {
+    font-size: 35px;
+    font-weight: bold;
+}
+
 .sub-title {
     font-size: 30px;
     margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -144,7 +153,7 @@ section {
 }
 
 .header-scrolled {
-    background-color: #f3aa22;
+    background-color: #bababa;
     -webkit-box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
             box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
     padding: 8px 0;
@@ -409,7 +418,6 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100vh;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -487,4 +495,37 @@ section {
 }
 .result__saved-users #savedName li {
     list-style-type: decimal;
+}
+
+.photo-gallery .photo-gallery__item {
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.photo-gallery .photo-gallery__item:hover {
+    -webkit-transform: scale(1.1) rotate(3deg);
+            transform: scale(1.1) rotate(3deg);
+}
+.photo-gallery .photo-gallery__item img {
+    height: auto;
+    width: 100%;
+}
+
+/* Style for Glightbox Start https://github.com/biati-digital/glightbox/blob/master/README.md */
+.goverlay {
+    background: #1c1b1b;
+}
+
+.gbtn {
+    padding: 0 !important;
+    background-color: #7cd12c !important;
+    -webkit-transition: all 0.3s ease !important;
+    transition: all 0.3s ease !important;
+}
+.gbtn:hover {
+    background-color: #0bad0b !important;
+}
+
+.gclose {
+    opacity: 1 !important;
 }
