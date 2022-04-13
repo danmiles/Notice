@@ -1,5 +1,5 @@
 body {
-    font-size: 18px;
+    font-size: 16px;
     background-color: #0f1a42;
     line-height: 1.5;
     min-width: 320px;
@@ -37,7 +37,7 @@ ol li {
 a {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    color: #7cd12c;
+    color: #6ec31e;
     text-decoration: none;
 }
 a:hover {
@@ -54,7 +54,7 @@ a:hover {
 }
 
 button {
-    background-color: #7cd12c;
+    background-color: #6ec31e;
     /* Green */
     border: none;
     border-radius: 15px;
@@ -113,6 +113,13 @@ section {
 .sub-title {
     font-size: 30px;
     margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
 }
 
 .text-center {
@@ -157,11 +164,6 @@ section {
     -webkit-box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
             box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
     padding: 8px 0;
-}
-@media (max-width: 991px) {
-    .header-scrolled {
-        padding: 20px 0;
-    }
 }
 
 /*--------------------------------------------------------------
@@ -414,7 +416,7 @@ section {
     display: block;
 }
 
-.content {
+.greetings {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -497,6 +499,18 @@ section {
     list-style-type: decimal;
 }
 
+.faq {
+    color: #e6e6e6;
+    font-size: 18px;
+}
+.faq .section__title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.faq .faq__header {
+    margin-bottom: 20px;
+}
+
 .photo-gallery .photo-gallery__item {
     overflow: hidden;
     -webkit-transition: all 0.3s ease;
@@ -518,7 +532,7 @@ section {
 
 .gbtn {
     padding: 0 !important;
-    background-color: #7cd12c !important;
+    background-color: #6ec31e !important;
     -webkit-transition: all 0.3s ease !important;
     transition: all 0.3s ease !important;
 }

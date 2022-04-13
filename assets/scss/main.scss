@@ -6,7 +6,7 @@
 // ============= Global setup start =============
 
 body {
-    font-size: 18px;
+    font-size: 16px;
     background-color: $body-color;
     line-height: 1.5;
     min-width: 320px;
@@ -110,6 +110,9 @@ section {
 .sub-title {
     font-size: 30px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .text-center {
@@ -161,11 +164,7 @@ section {
 .header-scrolled {
     background-color: $header-scrolled__background;
     box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-    padding: 8px 0;
-
-    @include mw-991 {
-        padding: 20px 0;
-    }
+    padding: 8px 0;    
 }
 
 /*--------------------------------------------------------------
@@ -433,7 +432,7 @@ section {
 
 // ============= Section Content start =============
 
-.content {
+.greetings {
     display: flex;
     // min-height: 50vh;    
     align-items: center;
@@ -491,6 +490,18 @@ section {
 }
 
 // ============= Section faq__hobby Start =============
+.faq {
+    color: $text-color-2;
+    font-size: 18px;
+    .section__title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .faq__header {
+        margin-bottom: 20px;
+    }
+}
+
 .photo-gallery {
 
     .photo-gallery__item {

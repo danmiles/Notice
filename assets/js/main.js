@@ -109,9 +109,7 @@ on(
     true
 );
 
-const photoGalleryLightbox = GLightbox({
-    selector: ".glightbox",
-});
+
 
 /**
  * Scrool with ofset on links with a class name .scrollto
