@@ -22,7 +22,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     padding: 0;
     margin: 0;
 }
@@ -104,15 +105,17 @@ section {
 
 .section__title {
     font-size: 35px;
-    font-weight: bold;
+    font-weight: bold;    
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .sub-title {
     font-size: 30px;
     margin-bottom: 20px;
     display: flex;
-    align-items: center;
-    gap: 15px;
+    align-items: center;    
+    gap: 15px;    
 }
 
 .text-center {
@@ -430,7 +433,7 @@ section {
 
 // ============= Header end =============
 
-// ============= Section Content start =============
+// ============= Section Greetings start =============
 
 .greetings {
     display: flex;
@@ -489,22 +492,33 @@ section {
     }
 }
 
+// ============= Section Greetings END =============
+
 // ============= Section faq__hobby Start =============
 .faq {
     color: $text-color-2;
-    font-size: 18px;
-    .section__title {
-        margin-bottom: 40px;
-        text-align: center;
-    }
-    .faq__header {
+    font-size: 18px;  
+}
+
+.faq-content {
+    margin-bottom: 80px;
+    .faq-content__header {
         margin-bottom: 20px;
     }
 }
 
-.photo-gallery {
+.photo-gallery, .video-gallery {
+    .gallery__subtitle {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 25px;        
+    }
+}
 
-    .photo-gallery__item {
+.photo-gallery {
+    margin-bottom: 35px;
+    &__item {
         overflow: hidden;
         transition: all 0.3s ease;        
         &:hover {
@@ -516,6 +530,7 @@ section {
         }  
     }
 }
+
 
 /* Style for Glightbox Start https://github.com/biati-digital/glightbox/blob/master/README.md */
 .goverlay {
@@ -534,6 +549,15 @@ section {
     opacity: 1 !important;    
 }
 
+
+.video-gallery {
+    &__item {        
+        iframe {
+            min-height: 500px;
+            width: 100%;            
+        }
+    }
+}
 
 
 
