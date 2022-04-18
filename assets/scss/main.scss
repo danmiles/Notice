@@ -183,12 +183,19 @@ section {
         margin: 0;
         padding: 0;
         display: flex;
+        gap: 40px;
         list-style: none;
         align-items: center;
     }
 
     li {
         position: relative;
+        display: flex;
+        gap: 10px;
+        span {
+            color: $navbar__text-color;
+            
+        }
     }
 
     a,
@@ -196,7 +203,7 @@ section {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 0 10px 30px;
+        
         font-family: "Roboto", sans-serif;
         font-size: 16px;
         font-weight: 700;
@@ -214,6 +221,7 @@ section {
         font-size: 20px;
         line-height: 0;
         margin-left: 2px;
+        margin-right: 5px;
     }
 
     a:hover,
@@ -531,8 +539,18 @@ section {
     }
 }
 
+.video-gallery {
+    &__item {        
+        iframe {
+            min-height: 500px;
+            width: 100%;            
+        }
+    }
+}
 
-/* Style for Glightbox Start https://github.com/biati-digital/glightbox/blob/master/README.md */
+// ============= Section faq__hobby end =============
+
+/* Style for Glightbox START https://github.com/biati-digital/glightbox/blob/master/README.md */
 .goverlay {
     background: #1c1b1b;
 }
@@ -549,16 +567,4 @@ section {
     opacity: 1 !important;    
 }
 
-
-.video-gallery {
-    &__item {        
-        iframe {
-            min-height: 500px;
-            width: 100%;            
-        }
-    }
-}
-
-
-
-// ============= Section faq__hobby end =============
+/* Style for Glightbox END https://github.com/biati-digital/glightbox/blob/master/README.md */

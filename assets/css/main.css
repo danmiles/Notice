@@ -184,6 +184,7 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 40px;
     list-style: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -191,6 +192,13 @@ section {
 }
 .navbar li {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+}
+.navbar li span {
+    color: #012970;
 }
 .navbar a,
 .navbar a:focus {
@@ -203,7 +211,6 @@ section {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 10px 0 10px 30px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -225,6 +232,7 @@ section {
     font-size: 20px;
     line-height: 0;
     margin-left: 2px;
+    margin-right: 5px;
 }
 .navbar a:hover,
 .navbar .active,
@@ -538,7 +546,12 @@ section {
     width: 100%;
 }
 
-/* Style for Glightbox Start https://github.com/biati-digital/glightbox/blob/master/README.md */
+.video-gallery__item iframe {
+    min-height: 500px;
+    width: 100%;
+}
+
+/* Style for Glightbox START https://github.com/biati-digital/glightbox/blob/master/README.md */
 .goverlay {
     background: #1c1b1b;
 }
@@ -557,7 +570,4 @@ section {
     opacity: 1 !important;
 }
 
-.video-gallery__item iframe {
-    min-height: 500px;
-    width: 100%;
-}
+/* Style for Glightbox END https://github.com/biati-digital/glightbox/blob/master/README.md */
