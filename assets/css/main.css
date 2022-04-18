@@ -236,8 +236,7 @@ section {
 }
 .navbar a:hover,
 .navbar .active,
-.navbar .active:focus,
-.navbar li:hover > a {
+.navbar .active:focus {
     color: #127512;
 }
 .navbar .getstarted,

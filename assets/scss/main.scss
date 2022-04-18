@@ -226,8 +226,7 @@ section {
 
     a:hover,
     .active,
-    .active:focus,
-    li:hover>a {
+    .active:focus    {
         color: $navbar-active-focus;
     }
 
