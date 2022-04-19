@@ -578,10 +578,10 @@ section {
     font-size: 40px;
     font-weight: bold;
 }
-.login-form .regisFrm {
+.login-form .loginFrm {
     font-size: 18px;
 }
-.login-form .regisFrm form input {
+.login-form .loginFrm form input {
     min-width: 300px;
     height: 40px;
 }
@@ -590,7 +590,7 @@ section {
     padding-top: 20px;
 }
 .send-button input {
-    width: 40px !important;
+    width: 40px;
     min-width: none;
     background-color: #6ec31e;
     /* Green */

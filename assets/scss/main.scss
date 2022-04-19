@@ -593,7 +593,7 @@ section {
         font-weight: bold;
     }
 
-    .regisFrm {
+    .loginFrm {
         font-size: 18px;
 
         form input {
@@ -607,7 +607,7 @@ section {
     padding-top: 20px;
 
     input {
-        width: 40px !important;
+        width: 40px;
         min-width: none;
         background-color: $link-color;
         /* Green */

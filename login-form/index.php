@@ -112,7 +112,7 @@
                     <div class="status-msg <?php echo $status; ?>"><?php echo $statusMsg; ?></div>
                 <?php } ?>
 
-                <div class="regisFrm">
+                <div class="loginFrm">
                     <form action="userAccount.php" method="post">
                         <input type="email" name="email" placeholder="EMAIL" value="<?php echo !empty($postData['email']) ? $postData['email'] : ''; ?>" required="">
                         <input type="password" name="password" placeholder="PASSWORD" required="">
