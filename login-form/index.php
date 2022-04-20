@@ -61,7 +61,7 @@
 
     <div class="container-xxl">
 
-        <section class="login-form">
+        <section class="login-section">
             <?php
             // Start session 
             session_start();
@@ -112,15 +112,16 @@
                     <div class="status-msg <?php echo $status; ?>"><?php echo $statusMsg; ?></div>
                 <?php } ?>
 
-                <div class="loginFrm">
-                    <form action="userAccount.php" method="post">
-                        <input type="email" name="email" placeholder="EMAIL" value="<?php echo !empty($postData['email']) ? $postData['email'] : ''; ?>" required="">
-                        <input type="password" name="password" placeholder="PASSWORD" required="">
+                <div class="form__box">
+                    <form class="form" action="userAccount.php" method="post">
+                        <input class="form__input" type="email" name="email" placeholder="Email" value="<?php echo !empty($postData['email']) ? $postData['email'] : ''; ?>" required="">
+                        <input class="form__input" type="password" name="password" placeholder="Password" required="">
                         <div class="send-button">
-                            <input type="submit" name="loginSubmit" value="LOGIN">
+                            <input class="send-button__input" type="submit" name="loginSubmit" value="Login">
                         </div>
+                        <p>Don't have an account? <a class="form__link" href="registration.php">Register</a></p>
                     </form>
-                    <p>Don't have an account? <a href="registration.php">Register</a></p>
+                    
                 </div>
             <?php } ?>
         </section>

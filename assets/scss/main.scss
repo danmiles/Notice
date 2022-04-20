@@ -585,20 +585,41 @@ section {
 
 // Section Login Form Start
 
-.login-form {
+.login-section {
     text-align: center;
 
     h2 {
         font-size: 40px;
         font-weight: bold;
     }
+}
 
-    .loginFrm {
+.form {
+    font-size: 18px;
+    transition: all 0.3s ease;
+
+    .form__input {
+        min-width: 300px;
+        height: 40px;
+        border-radius: 5px;
+              
+    }
+    .form__input[type] {
+        border: 3px solid $link-color;
+        transition: all 0.3s ease;
+        font-size: 18px;    
+    }
+    .form__input[type]:focus {
+        border: 3px solid $accent;
+        background-color: #aef2a8;
         font-size: 18px;
-
-        form input {
-            min-width: 300px;
-            height: 40px;
+        outline: none;  
+    }
+    .form__link {
+        color: $accent;
+        transition: all 0.3s ease;
+        &:hover {
+            color: $link-color__hover;
         }
     }
 }
@@ -606,9 +627,8 @@ section {
 .send-button {
     padding-top: 20px;
 
-    input {
-        width: 40px;
-        min-width: none;
+    .send-button__input {        
+        min-width: 60px;
         background-color: $link-color;
         /* Green */
         border: none;
@@ -627,18 +647,10 @@ section {
             background-color: $link-color__hover;
             color: $accent;
         }
-    }
-
-    p a {
-        color: $accent;
-
-        &:hover {
-            color: $link-color__hover;
-        }
-    }
+    } 
 }
 
-.regisFrm {
+.regist-form {
     text-align: center;
     form {
         display: flex;
@@ -646,9 +658,5 @@ section {
         justify-content: center;
         align-items: center;
         gap: 20px;
-        input {
-            min-width: 300px;
-        }
     }
-
 }

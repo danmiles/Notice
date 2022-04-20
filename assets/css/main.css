@@ -571,27 +571,50 @@ section {
 }
 
 /* Style for Glightbox END https://github.com/biati-digital/glightbox/blob/master/README.md */
-.login-form {
+.login-section {
     text-align: center;
 }
-.login-form h2 {
+.login-section h2 {
     font-size: 40px;
     font-weight: bold;
 }
-.login-form .loginFrm {
+
+.form {
     font-size: 18px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-.login-form .loginFrm form input {
+.form .form__input {
     min-width: 300px;
     height: 40px;
+    border-radius: 5px;
+}
+.form .form__input[type] {
+    border: 3px solid #6ec31e;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+.form .form__input[type]:focus {
+    border: 3px solid #ffc506;
+    background-color: #aef2a8;
+    font-size: 18px;
+    outline: none;
+}
+.form .form__link {
+    color: #ffc506;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.form .form__link:hover {
+    color: #0bad0b;
 }
 
 .send-button {
     padding-top: 20px;
 }
-.send-button input {
-    width: 40px;
-    min-width: none;
+.send-button .send-button__input {
+    min-width: 60px;
     background-color: #6ec31e;
     /* Green */
     border: none;
@@ -607,21 +630,15 @@ section {
     transition: all 0.3s ease;
     cursor: pointer;
 }
-.send-button input:hover {
+.send-button .send-button__input:hover {
     background-color: #0bad0b;
     color: #ffc506;
 }
-.send-button p a {
-    color: #ffc506;
-}
-.send-button p a:hover {
-    color: #0bad0b;
-}
 
-.regisFrm {
+.regist-form {
     text-align: center;
 }
-.regisFrm form {
+.regist-form form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -636,7 +653,4 @@ section {
         -ms-flex-align: center;
             align-items: center;
     gap: 20px;
-}
-.regisFrm form input {
-    min-width: 300px;
 }
