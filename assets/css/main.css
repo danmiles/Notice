@@ -571,12 +571,17 @@ section {
 }
 
 /* Style for Glightbox END https://github.com/biati-digital/glightbox/blob/master/README.md */
-.login-section {
+.form-section {
     text-align: center;
 }
-.login-section h2 {
+.form-section h2 {
     font-size: 40px;
     font-weight: bold;
+}
+.form-section .status-msg {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 .form {
