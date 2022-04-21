@@ -1,7 +1,8 @@
 <?php include 'header.php' ?>
 
             <?php
-            // Start session 
+            // Start session
+            @ob_start(); 
             session_start();
             
             // Get data from session 
