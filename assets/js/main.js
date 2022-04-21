@@ -90,8 +90,8 @@ if (selectHeader) {
  */
 on("click", ".mobile-nav-toggle", function (e) {
     select("#navbar").classList.toggle("navbar-mobile");
-    this.classList.toggle("bx-list-plus");
-    this.classList.toggle("bx-list-minus");
+    this.classList.toggle("fa-plus");
+    this.classList.toggle("fa-minus");
 });
 
 /**
@@ -109,57 +109,51 @@ on(
     true
 );
 
-
-
 /**
  * Scrool with ofset on links with a class name .scrollto
  */
-// on(
-//     "click",
-//     ".scrollto",
-//     function (e) {
-//         if (select(this.hash)) {
-//             e.preventDefault();
+on(
+    "click",
+    ".scrollto",
+    function (e) {
+        if (select(this.hash)) {
+            e.preventDefault();
 
-//             let navbar = select("#navbar");
-//             if (navbar.classList.contains("navbar-mobile")) {
-//                 navbar.classList.remove("navbar-mobile");
-//                 let navbarToggle = select(".mobile-nav-toggle");
-//                 navbarToggle.classList.toggle("bx-list-plus");
-//                 navbarToggle.classList.toggle("bx-list-minus");
-//             }
-//             scrollto(this.hash);
-//         }
-//     },
-//     true
-// );
+            let navbar = select("#navbar");
+            if (navbar.classList.contains("navbar-mobile")) {
+                navbar.classList.remove("navbar-mobile");
+                let navbarToggle = select(".mobile-nav-toggle");
+                navbarToggle.classList.toggle("fa-plus");
+                navbarToggle.classList.toggle("fa-minus");
+            }
+            scrollto(this.hash);
+        }
+    },
+    true
+);
 
 /**
  * Scroll with ofset on page load with hash links in the url
  */
-// window.addEventListener("load", () => {
-//     if (window.location.hash) {
-//         if (select(window.location.hash)) {
-//             scrollto(window.location.hash);
-//         }
-//     }
-// });
+window.addEventListener("load", () => {
+    if (window.location.hash) {
+        if (select(window.location.hash)) {
+            scrollto(window.location.hash);
+        }
+    }
+});
 
 /**
  * Animation on scroll
- *
  */
-// function aos_init() {
-//     AOS.init({
-//         duration: 1000,
-//         easing: "ease-in-out",
-//         once: true,
-//         mirror: false,
-//     });
-// }
-// window.addEventListener("load", () => {
-//     aos_init();
-// });
-
-
-
+function aos_init() {
+    AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false,
+    });
+}
+window.addEventListener("load", () => {
+    aos_init();
+});

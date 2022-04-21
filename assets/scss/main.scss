@@ -188,16 +188,17 @@ section {
         gap: 40px;
         list-style: none;
         align-items: center;
+        @include mw-1200 {
+            gap: 30px;
+        }
     }
 
     li {
         position: relative;
         display: flex;
-        gap: 10px;
-
+        gap: 10px;        
         span {
             color: $navbar__text-color;
-
         }
     }
 
@@ -206,7 +207,6 @@ section {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         font-family: "Roboto", sans-serif;
         font-size: 16px;
         font-weight: 700;
@@ -221,7 +221,7 @@ section {
 
     a i,
     a:focus i {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 0;
         margin-left: 2px;
         margin-right: 5px;

@@ -190,6 +190,11 @@ section {
         -ms-flex-align: center;
             align-items: center;
 }
+@media (max-width: 1200px) {
+    .navbar ul {
+        gap: 30px;
+    }
+}
 .navbar li {
     position: relative;
     display: -webkit-box;
@@ -229,7 +234,7 @@ section {
 }
 .navbar a i,
 .navbar a:focus i {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 0;
     margin-left: 2px;
     margin-right: 5px;
