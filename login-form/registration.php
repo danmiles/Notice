@@ -1,4 +1,8 @@
-<?php include 'header.php' ?>
+<?php 
+    @ob_start();  
+    include 'header.php' 
+?>
+
             <?php
             // Start session 
             session_start();
